@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            text-align: center;
+            margin: 10px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Gateway</h1>
+    <form id="myForm">
+    <input type="text" placeholder="Account Holder" id="productName">
+    <input type="text" placeholder="card_no" id="productBrand">
+    <input type="number" placeholder="Price" id="productPrice">
+    </form> 
+    <button onclick="submit()">Add Products</button>
+</body>
+</html>
+<script>
+    function submit(){
+        setTimeout(function(){
+            alert("Your order is successfully placed")
+        },
+        3000)
+    }
+</script>
